@@ -1,0 +1,76 @@
+@import compass
+
+$font-color: #838383
+$link-color: #000000
+$link-hover-color: lighten($link-color, 30%)
+
+$sans-font: 'Open Sans', Helvetica, Arial, sans-serif
+
+body
+  font-size: 12px
+  line-height: 1.5em
+  color: $font-color
+  font-family: $sans-font
+  width: 90%
+  margin: 3em 5%
+
+#{headings(6)},
+.h1, .h2, .h3, .h4, .h5, .h6
+  text-transform: uppercase
+  font-weight: normal
+
+
+h1, .h1
+  font-size: 1.5em
+  color: #000
+
+h2
+  font-size: 1em
+  margin: 0
+  color: $font-color
+
+p
+  text-transform: uppercase
+
+a
+  text-decoration: none
+  +link-colors($link-color, $link-hover-color, $link-hover-color, $link-color, $link-color)
+
+
+header
+  margin-bottom: 4em
+  a
+    h1
+      margin: 0
+    &:hover h1
+      color: $link-hover-color
+    h2
+      font-size: 1em
+      margin: 0
+      color: $font-color
+
+[role="navigation"]
+  margin-bottom: 2em
+  ul
+    padding: 0
+    margin: 0
+  a
+    text-transform: uppercase
+    display: block
+    padding: 0.5em 0
+    color: $font-color
+    font-size: 10px
+    .active, &:hover
+      color: $link-color     
+
+[role="main"]
+  margin-bottom: 6em
+
+@media only screen and (min-width: 481px)
+  [role="navigation"]
+    +float-left
+    width: 30%
+
+  [role="main"]
+    +float-left
+    width: 70%
