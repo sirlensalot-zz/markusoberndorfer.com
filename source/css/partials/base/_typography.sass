@@ -1,0 +1,27 @@
+body
+  font-size: 12px
+  line-height: 1.5em
+  color: $font-color
+  font-family: $sans-font
+
+
+#{headings(6)},
+.h1, .h2, .h3, .h4, .h5, .h6
+  text-transform: uppercase
+  font-weight: normal
+
+
+h1, .h1
+  font-size: 10px
+  text-transform: uppercase
+  margin: 0
+  color: $heading-color
+
+h2
+  font-size: 1em
+  margin: 0
+  color: $font-color
+
+a
+  text-decoration: none
+  +link-colors($link-color, $link-hover-color, $link-hover-color, $link-color, $link-color)

@@ -1,0 +1,20 @@
+.l-container
+  +susy-grid-background
+  padding-bottom: 3em
+  padding-top: 3em
+  +container()
+
+  +at-breakpoint()
+    +set-container-width()
+
+
+.l-sidebar
+  +at-breakpoint()
+    +span-columns(3)
+
+.l-content
+  +at-breakpoint()
+    +span-columns(9 omega)
+
+.content
+  @extend .group

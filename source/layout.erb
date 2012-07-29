@@ -14,57 +14,40 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/libs/modernizr.custom.js"></script>
 </head>
 <body>
-  <header role="banner">
-    <a href="http://www.markusoberndorfer.com/">
-      <h1>Markus Oberndorfer</h1>
-    </a>
-      <h2>Omega Point HD (2012) <a href="http://www.markusoberndorfer.com/foukauld/">Foukauld</a></h2>
-  </header>
-  <div class="content" id="content">
-    <nav role="navigation">
-      <ul>
-        <li>
-          <a href="video.html" class="active">Video</a>
-        </li>
-        <li>
-          Essay by Lydia Nsiah:
-          <ul>
-            <li>
-              Deutsch
-            </li>
-            <li>
-              English
-            </li>
-            <li>
-              Francais
-            </li>
-        </li>
-        <li>
-          <a href="downloads.html">Downloads</a>
-        </li>
-      </ul>
-    </nav>
-    <div role="main">
-      <%= yield %>
+  <div id="container" class="l-container">
+    <header role="banner" class="page-head">
+      <a href="http://www.markusoberndorfer.com/">
+        <h1>Markus Oberndorfer</h1>
+      </a>
+        <h2>Omega Point HD (2012) <a href="http://www.markusoberndorfer.com/foukauld/">Foukauld</a></h2>
+    </header>
+    <div class="content" id="content">
+      <div class="l-sidebar">
+        <nav role="navigation" class="subnav">
+          <%= yield_content :subnav  %>
+        </nav>
+      </div>
+      <div role="main" class="l-content">
+        <%= yield %>
+      </div>
     </div>
+    <footer>
+
+    </footer>
   </div>
-  <footer>
 
-  </footer>
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/libs/jquery.fitvids.js"></script>
-  <script src="js/script.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/libs/jquery.fitvids.js"></script>
+  <script src="/js/script.js"></script>
   <!-- end scripts -->
 
   <script>
