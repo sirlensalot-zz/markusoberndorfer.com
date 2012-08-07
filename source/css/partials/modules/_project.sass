@@ -1,6 +1,9 @@
 .project-stage
   margin-bottom: 2em
 
+  img
+    max-width: 100%
+
 
 .project-facts
   font-size: 11px
@@ -13,4 +16,29 @@
 
 .project-text
   > article
-    margin-bottom: 1em
+    margin-bottom: 1.5em
+
+.project-text-more
+  color: $font-color
+  text-transform: uppercase
+
+.downloads
+  padding: 0
+  margin: 0 0 1em 0
+  list-style: none
+
+  > li
+    padding: 0
+    margin: 0
+
+  a
+    display: block
+    color: $font-color
+    font-size: 11px
+    &:visited    
+      color: $font-color
+    &:hover
+      color: $link-color
+    &:before
+      content: "\2022"
+      padding-right: 5px
