@@ -1,6 +1,6 @@
 /* line 1, partials/base/_typography.sass */
 body {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.5em;
   color: #a7a7a7;
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
@@ -67,8 +67,8 @@ a {
   padding-bottom: 3em;
   padding-top: 3em;
   *zoom: 1;
-  max-width: 88em;
-  _width: 88em;
+  max-width: 100em;
+  _width: 100em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2em;
@@ -81,21 +81,21 @@ a {
   @media (min-width: 769px) {
     /* line 1, partials/_layout.sass */
     .l-container {
-      max-width: 88em;
-      _width: 88em; } }
+      max-width: 100em;
+      _width: 100em; } }
 
 @media (min-width: 769px) {
   /* line 11, partials/_layout.sass */
   .l-sidebar {
-    width: 23.29545%;
+    width: 23.5%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2%;
     display: inline; } }
 
 @media (min-width: 769px) {
   /* line 15, partials/_layout.sass */
   .l-content {
-    width: 74.43182%;
+    width: 74.5%;
     float: right;
     margin-right: 0;
     #margin-left: -2em;
@@ -132,7 +132,7 @@ a {
   text-transform: uppercase;
   display: block;
   color: #a7a7a7;
-  font-size: 10px; }
+  font-size: 11px; }
   /* line 9, partials/modules/_navigation.sass */
   .mainnav a.active, .mainnav a:hover {
     color: black; }
@@ -160,7 +160,7 @@ a {
     text-transform: uppercase;
     display: block;
     color: #a7a7a7;
-    font-size: 10px; }
+    font-size: 11px; }
     /* line 35, partials/modules/_navigation.sass */
     .subnav-section a:before {
       content: "\2022";
@@ -182,15 +182,15 @@ a {
   @media (min-width: 769px) {
     /* line 8, partials/modules/_project.sass */
     .project-facts {
-      width: 31.29771%;
+      width: 31.54362%;
       float: left;
-      margin-right: 3.05344%;
+      margin-right: 2.68456%;
       display: inline; } }
 
 @media (min-width: 769px) {
   /* line 13, partials/modules/_project.sass */
   .project-description {
-    width: 65.64885%;
+    width: 65.77181%;
     float: right;
     margin-right: 0;
     #margin-left: -2em;
