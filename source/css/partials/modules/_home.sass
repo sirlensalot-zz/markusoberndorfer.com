@@ -1,0 +1,18 @@
+.home-content
+  +at-breakpoint($media-layout)
+    +span-columns(5)
+    +post(1)
+
+.home-image
+  margin-top: 5em
+  +at-breakpoint($media-layout)
+    +span-columns(6 omega)
+
+.home-section
+  margin-bottom: 3em
+
+  > ul
+    @extend .downloads
+
+    ul
+      margin-bottom: 1em
