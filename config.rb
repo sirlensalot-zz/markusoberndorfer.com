@@ -13,6 +13,8 @@ compass_config do |config|
   config.output_style = :compressed
 end
 
+ignore 'layout_simple.erb'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
