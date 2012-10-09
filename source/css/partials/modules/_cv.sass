@@ -1,0 +1,44 @@
+.cv-section
+  margin-bottom: 5em
+
+.cv
+  th, td
+    line-height: 1.5em
+    vertical-align: top
+  th
+    text-align: left
+    font-weight: normal
+    width: columns(3)
+  td
+    width: columns(9)
+
+.cv-intro
+  th, td
+    color: $heading-color
+    padding-bottom: 1em
+
+
+.exhibition-block
+  +at-breakpoint($media-layout)
+    +span-columns(3)
+    +post(1)
+
+  &.last
+    +at-breakpoint($media-layout)
+      +span-columns(3 omega)
+      +post(1) 
+
+.exhibition-category
+  margin-bottom: 2em
+
+  > h1
+    border-bottom: 1px dashed $heading-color
+    padding-bottom: 0.5em
+    margin-bottom: 1.5em
+    display: inline-block
+
+  ul
+    @extend .downloads
+
+  > article
+    padding-bottom: 1em

@@ -25,15 +25,12 @@
       <a href="/">
         <h1>Markus Oberndorfer <span>(beta)</span></h1>
       </a>
+
       <%= partial "partials/mainnav" %>
+    
     </header>
     <div class="content" id="content">
-      <div class="l-sidebar">
-        <nav role="navigation" class="subnav">
-          <%= yield_content :subnav  %>
-        </nav>
-      </div>
-      <div role="main" class="l-content">
+      <div role="main" class="l-main">
         <%= yield %>
       </div>
     </div>
