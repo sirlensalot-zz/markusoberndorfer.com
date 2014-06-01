@@ -71,6 +71,8 @@ helpers do
     page_section = page.data.section || ''
     link_class = ''
 
+    return title if target_page.nil?
+
     if page_url == target_page.destination_path
       is_active = true
     end
