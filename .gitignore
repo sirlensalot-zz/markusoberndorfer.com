@@ -8,9 +8,12 @@
 /.bundle
 
 # Ignore the build directory
-# /build
+/build
 
 # Ignore Sass' cache
 /.sass-cache
 
 workfiles/
+
+*.sublime-project
+*.sublime-workspace
