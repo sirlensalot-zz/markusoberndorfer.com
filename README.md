@@ -9,3 +9,10 @@ Go into the directory of the repo and run
 ```
 middleman
 ```
+
+## Building the site
+
+```
+middleman build
+```
+
