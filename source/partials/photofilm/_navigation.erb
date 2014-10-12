@@ -1,5 +1,19 @@
 <%= yield_content :project_subnav  %>
 
+
+<div class="subnav-section">
+  <h1>Video:</h1>
+  <ul>
+    <li>
+      <%= nav_link_to "Archived Material", "/archived-material/index.html" %>
+    </li>
+      <%= nav_link_to "Autrement on devient fou.....", "/autrement-on-devient-fou/transcript.html" %>
+    </li>
+    <li>
+  </ul>
+</div>
+
+
 <div class="subnav-section">
   <h1>Photofilm:</h1>
   <ul>
@@ -30,13 +44,9 @@
     <li>
       <%= nav_link_to "Blitzkrieg", "/projects/blitzkrieg/index.html" %>
     </li>
-      </p>
-      <p>
-    <li>
-      Mostly preview versions. Send an to receive a temporary password to review full versions. Thank you for your understanding.
-    </li>
   </ul>
 </div>
+
 
 <div class="subnav-section">
   <h1>Stopmotion:</h1>
@@ -56,17 +66,3 @@
   </ul>
 </div>
 
-<div class="subnav-section">
-  <h1>Video:</h1>
-  <ul>
-    <li>
-      <%= nav_link_to "Autrement on devient fou.....", "/autrement-on-devient-fou/index.html" %>
-    </li>
-    <li>
-      <%= nav_link_to "Archived Material", "/archived-material/index.html" %>
-    </li>
-    <li>
-      <%= nav_link_to "Inherited", "/projects/inherited/index.html" %>
-    </li>
-  </ul>
-</div>
