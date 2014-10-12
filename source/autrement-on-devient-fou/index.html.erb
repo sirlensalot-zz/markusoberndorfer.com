@@ -3,8 +3,11 @@ title: "Autrement On Devient Fou....."
 section: "photography"
 ---
 
-
 <% content_for :subnav do %>
+  <%= partial "partials/photofilm/navigation" %>
+<% end %>
+
+<% content_for :project_subnav do %>
   <%= partial "partials/autrement/navigation" %>
 <% end %>
 
